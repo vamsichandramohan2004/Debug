@@ -61,3 +61,36 @@ Bug Description: The CrewAI agents successfully start processing the report but 
 ### Git (for cloning the repository)
 
 ### Ollama (for running Llama 3 locally)
+
+##  Set Up Python Environment:
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+## Install Dependencies:
+pip install -r requirements.txt
+
+## Configure Environment Variables:
+Example .env content (if applicable for any external services, e.g., OpenAI, though Llama 3 is local):
+
+## Install and Run Ollama with Llama 3:
+## ollama pull llama3
+ollama pull llama3
+ollama run llama3
+
+##  Start the FastAPI Server:
+Open another new terminal window. Navigate to your project's root directory (blood-test-analyser-debug).
+## Start the Uvicorn server:
+uvicorn main:app --reload
+
+## Prepare Your Blood Test Report PDF:
+Place your blood test report PDF file into the data/ subdirectory within your project.
+Example: blood-test-analyser-debug/data/blood_test_report.pdf
+
+## Send Your Report for Analysis
+Open a third terminal window. Navigate to your project's root directory (blood-test-analyser-debug).
+
+## Execute the curl command to upload your file and query your application:
+curl.exe -X POST "http://127.0.0.1:8000/analyze" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@data/blood_test_report.pdf;type=application/pdf" -F "query=Summarise my Blood Test Report"
