@@ -1,0 +1,77 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting embedchain
+  Downloading embedchain-0.0.73-py3-none-any.whl.metadata (7.9 kB)
+Collecting chromadb<0.5.0,>=0.4.8 (from embedchain)
+  Downloading chromadb-0.4.24-py3-none-any.whl.metadata (7.3 kB)
+Collecting langchain<0.0.280,>=0.0.279 (from embedchain)
+  Downloading langchain-0.0.279-py3-none-any.whl.metadata (14 kB)
+Collecting openai<0.28.0,>=0.27.5 (from embedchain)
+  Downloading openai-0.27.10-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: python-dotenv<2.0.0,>=1.0.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from embedchain) (1.1.1)
+Requirement already satisfied: requests<3.0.0,>=2.31.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from embedchain) (2.32.4)
+Collecting tiktoken<0.5.0,>=0.4.0 (from embedchain)
+  Downloading tiktoken-0.4.0.tar.gz (25 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting youtube-transcript-api<0.7.0,>=0.6.1 (from embedchain)
+  Downloading youtube_transcript_api-0.6.3-py3-none-any.whl.metadata (17 kB)
+Requirement already satisfied: build>=1.0.3 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.2.2.post1)
+Requirement already satisfied: pydantic>=1.9 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (2.11.7)
+Collecting chroma-hnswlib==0.7.3 (from chromadb<0.5.0,>=0.4.8->embedchain)
+  Downloading chroma-hnswlib-0.7.3.tar.gz (31 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: fastapi>=0.95.2 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (0.115.14)
+Requirement already satisfied: uvicorn>=0.18.3 in c:\users\hp\appdata\roaming\python\python313\site-packages (from uvicorn[standard]>=0.18.3->chromadb<0.5.0,>=0.4.8->embedchain) (0.34.3)
+Requirement already satisfied: numpy>=1.22.5 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (2.3.1)
+Requirement already satisfied: posthog>=2.4.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (6.0.0)
+Requirement already satisfied: typing-extensions>=4.5.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (4.14.0)
+Collecting pulsar-client>=3.1.0 (from chromadb<0.5.0,>=0.4.8->embedchain)
+  Downloading pulsar_client-3.7.0-cp313-cp313-win_amd64.whl.metadata (1.2 kB)
+Requirement already satisfied: onnxruntime>=1.14.1 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.22.0)
+Requirement already satisfied: opentelemetry-api>=1.2.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.34.1)
+Requirement already satisfied: opentelemetry-exporter-otlp-proto-grpc>=1.2.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.34.1)
+Collecting opentelemetry-instrumentation-fastapi>=0.41b0 (from chromadb<0.5.0,>=0.4.8->embedchain)
+  Downloading opentelemetry_instrumentation_fastapi-0.55b1-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: opentelemetry-sdk>=1.2.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.34.1)
+Requirement already satisfied: tokenizers>=0.13.2 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (0.21.2)
+Requirement already satisfied: pypika>=0.48.9 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (0.48.9)
+Requirement already satisfied: tqdm>=4.65.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (4.67.1)
+Requirement already satisfied: overrides>=7.3.1 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (7.7.0)
+Requirement already satisfied: importlib-resources in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (6.5.2)
+Requirement already satisfied: grpcio>=1.58.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (1.73.1)
+Requirement already satisfied: bcrypt>=4.0.1 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (4.3.0)
+Requirement already satisfied: typer>=0.9.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (0.16.0)
+Requirement already satisfied: kubernetes>=28.1.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (33.1.0)
+Requirement already satisfied: tenacity>=8.2.3 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (9.1.2)
+Requirement already satisfied: PyYAML>=6.0.0 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (6.0.2)
+Requirement already satisfied: mmh3>=4.0.1 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (5.1.0)
+Requirement already satisfied: orjson>=3.9.12 in c:\users\hp\appdata\roaming\python\python313\site-packages (from chromadb<0.5.0,>=0.4.8->embedchain) (3.10.18)
+Collecting SQLAlchemy<3,>=1.4 (from langchain<0.0.280,>=0.0.279->embedchain)
+  Downloading sqlalchemy-2.0.41-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+Requirement already satisfied: aiohttp<4.0.0,>=3.8.3 in c:\users\hp\appdata\roaming\python\python313\site-packages (from langchain<0.0.280,>=0.0.279->embedchain) (3.12.13)
+Collecting dataclasses-json<0.6.0,>=0.5.7 (from langchain<0.0.280,>=0.0.279->embedchain)
+  Downloading dataclasses_json-0.5.9-py3-none-any.whl.metadata (22 kB)
+Collecting langsmith<0.1.0,>=0.0.21 (from langchain<0.0.280,>=0.0.279->embedchain)
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numexpr<3.0.0,>=2.8.4 (from langchain<0.0.280,>=0.0.279->embedchain)
+  Downloading numexpr-2.11.0-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Collecting numpy>=1.22.5 (from chromadb<0.5.0,>=0.4.8->embedchain)
+  Downloading numpy-1.26.4.tar.gz (15.8 MB)
+     ---------------------------------------- 15.8/15.8 MB 2.1 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
